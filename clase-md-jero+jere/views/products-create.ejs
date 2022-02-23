@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head") %> 
+<body>
+	<%- include("partials/navbar") %>
+	<hr>
+	<h1>Creación de producto</h1>
+	<form action="/products" method="post">
+		<div>
+			<label>Nombre:</label> <br>
+			<input 
+				type="text"
+			 	name="name"
+				value="<%= locals.formData ? formData.name : "" %>"
+			>
+			<div class="error">
+				<% if (locals.errors !== undefined) { %> 
+					<%= errors.name ? errors.name.msg : "" %> 
+				<% } %>
+			</div>
+		</div>
+		<div>
+			<label>Precio:</label> <br>
+			<input 
+				type="text" 
+				name="price"
+				value="<%= locals.formData ? formData.price : "" %>"
+			>
+			<div class="error">
+				<% if (locals.errors !== undefined) { %>
+					<%= errors.price ? errors.price.msg : "" %>
+				<% } %>
+			</div>
+		</div>
+		<div>
+			<label>Descripción:</label> <br>
+			<textarea name="description" cols="30" rows="10"><%= locals.formData ? formData.description : "" %></textarea>
+			<div class="error">
+				<% if (locals.errors !== undefined) { %> 
+					<%= errors.description ? errors.description.msg : "" %>
+				<% } %>
+			</div>
+		</div>
+		<button>Guardar</button>
+	</form>
+	<hr>
+</body>
+</html>

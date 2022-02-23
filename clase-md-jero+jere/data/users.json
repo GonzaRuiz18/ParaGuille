@@ -1,0 +1,20 @@
+[
+ {
+  "id": 1,
+  "fullName": "Gonzalo",
+  "password": "$2a$10$Ao8P3aMs/rFk9EqGHpK6VuPH0bnZSg.YfSWxfIZYoM9.HW1IKV9m6",
+  "email": "gonza@gmail.com"
+ },
+ {
+  "id": 2,
+  "fullName": "Dario",
+  "password": "$2a$10$ZzwNPAJ8v.cswYYW/BnZ8eD4Tly.w1vWBnMaSI4f4RjGoDZATjPuG",
+  "email": "Dario@gmail.com"
+ },
+ {
+  "id": 3,
+  "fullName": "Gonzalo",
+  "password": "$2a$10$yDfeAu2CwsPMnVdQJbgfcuMqb4oblv..H0y7MH353Q1iOCYD/NYIG",
+  "email": "12345678"
+ }
+]
