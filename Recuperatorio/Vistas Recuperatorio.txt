@@ -1,0 +1,11 @@
+
+
+2 perfiles
+ login
+ perfil con condicion para usuario admistrador(puede ver info de usuarios comunes)
+ changePassword
+
+Administrador
+  infoUsuariosComunes
+  Registrar Comunes
+  Modificar Datos
